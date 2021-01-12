@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
-  return <h1>Olá Wellinton Camboim!</h1>;
+  return (
+    <Fragment>
+    <h1>Olá Wellinton Camboim!</h1>
+
+    <GlobalStyles />
+    </Fragment>
+  );
 }
 
 export default App;
