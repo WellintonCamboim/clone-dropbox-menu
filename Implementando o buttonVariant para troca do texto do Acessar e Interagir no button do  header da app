@@ -1,0 +1,16 @@
+Implementando o buttonVariant para troca do texto do Acessar e Interagir no button do  header da app
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Thu Jan 21 21:32:11 2021 -0300
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   .eslintcache
+#	modified:   src/components/Section/index.tsx
+#	modified:   src/components/Section/styles.ts
+#
