@@ -33,5 +33,9 @@ export const Container = styled.div`
     &.scrollOpen {
       transform: translateX(0);
     }
+
+    &.scrollOpen .action--clone {
+      display: none;
+    }
   }
 `;

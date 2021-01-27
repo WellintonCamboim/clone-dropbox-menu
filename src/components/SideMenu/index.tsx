@@ -6,7 +6,7 @@ const scrollThreshold = 300;
 
 const SideMenu: React.FC = ({children}) => {
     const [scrollY, setScrollY] = useState(0);
-    const [isActive, setIsActive] = useState(false);
+    const [isActive, setIsActive] = useState(true);
 
     useEffect(()=>{
         function onScroll(){
