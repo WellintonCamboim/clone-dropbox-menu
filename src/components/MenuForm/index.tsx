@@ -3,9 +3,8 @@ import React from 'react';
 import { Container, Navigation, DropboxLogo, Form } from './styles';
 
 const MenuForm: React.FC = () => {
-
   function handleToggle(){
-    if(window.toggleActiveMenu) window.toggleActiveMenu();
+    if (window.toggleActiveMenu) window.toggleActiveMenu();
   }
 
   return (
@@ -13,10 +12,12 @@ const MenuForm: React.FC = () => {
           <Navigation>
               <h1>
                 <DropboxLogo />
-                <span>Dropbox</span>
+                <span>Dropbox</span>   
               </h1>
 
-              <button className="action--close" onClick={handleToggle}>✕</button>
+              <button className="action--close" onClick={handleToggle}>
+                ✕
+              </button>
           </Navigation>
           <Form>
               <span className="title">Registre-se</span>

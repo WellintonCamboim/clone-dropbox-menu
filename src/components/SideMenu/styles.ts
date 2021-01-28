@@ -28,13 +28,12 @@ export const Container = styled.div`
   &.open {
     transform: translateX(0);
   }
-
   @media (min-width: 1024px) {
     &.scrollOpen {
       transform: translateX(0);
     }
 
-    &.scrollOpen .action--clone {
+    &.scrollOpen .action--close {
       display: none;
     }
   }
