@@ -4,9 +4,15 @@ import { Container } from './styles';
 
 const scrollThreshold = 300;
 
+declare global {
+    interface Window {
+        toggleActiveMenu: (() => void | undefined);
+    }
+}
+
 const SideMenu: React.FC = ({children}) => {
     const [scrollY, setScrollY] = useState(0);
-    const [isActive, setIsActive] = useState(true);
+    const [isActive, setIsActive] = useState(false);
 
     useEffect(()=>{
         function onScroll(){
@@ -27,9 +33,14 @@ const SideMenu: React.FC = ({children}) => {
     //retorna uma string da class acima
     const className = classes.join(' ').trim();
 
-  return (
-  <Container className={className}>{children}</Container>
-  );
-}
+    //function que irá mudar o state de open and closer
+    function toggleActiveMenu(){
+        setIsActive(prev => !prev);
+    }
+
+    window.toggleActiveMenu = toggleActiveMenu;
+
+    return <Container className={className}>{children}</Container>;
+};
 
 export default SideMenu;
